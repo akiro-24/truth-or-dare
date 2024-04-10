@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Truth or Dare</title>
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js" defer></script>
+  </head>
+  <body>
+    <div class="container-fluid" style="height: 100%">
+      <div class="row py-md-5 justify-content-center" style="height: 100%">
+        <div
+          class="col col-md-7 col-lg-6 col-xl-5 col-xxl-4 p-0 my-card d-flex flex-column position-relative"
+        >
+          <div class="curtain position-absolute" id="curtain"></div>
+
+          <div class="my-card-header">
+            <p
+              class="text-center py-4 fs-1 fw-bold text-light m-0"
+              id="header-title"
+            >
+              <!-- TRUTH -->
+            </p>
+          </div>
+          <p
+            class="tod-text text-light text-center fs-2 px-5 mt-5 fw-semibold flex-grow-1 overflow-y-auto"
+            id="tod-text"
+          ></p>
+          <div class="d-flex gap-5 p-5">
+            <button
+              class="truth-btn btn btn-primary btn-lg flex-grow-1 bg-success fw-bold border-0 py-3"
+              type="button"
+              id="truth-btn"
+            >
+              TRUTH
+            </button>
+            <button
+              class="dare-btn btn btn-primary btn-lg flex-grow-1 bg-danger fw-bold border-0 py-3"
+              type="button"
+              id="dare-btn"
+            >
+              DARE
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

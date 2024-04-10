@@ -1,0 +1,58 @@
+body {
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+  height: 100vh;
+}
+
+.my-card {
+  background-color: #282828;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  max-height: 100%;
+}
+
+.my-card-header {
+  background-color: #ffc107;
+}
+
+.tod-text::-webkit-scrollbar {
+  background-color: transparent;
+  width: 10px;
+}
+
+.tod-text::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+
+.truth-btn:hover {
+  -webkit-box-shadow: 0px 0px 27px 0px rgba(25, 135, 84, 1);
+  -moz-box-shadow: 0px 0px 27px 0px rgba(25, 135, 84, 1);
+  box-shadow: 0px 0px 27px 0px rgba(25, 135, 84, 1);
+}
+
+.dare-btn:hover {
+  -webkit-box-shadow: 0px 0px 27px 0px rgba(220, 53, 69, 1);
+  -moz-box-shadow: 0px 0px 27px 0px rgba(220, 53, 69, 1);
+  box-shadow: 0px 0px 27px 0px rgba(220, 53, 69, 1);
+}
+
+.curtain {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffc107;
+  transform-origin: top;
+  transition: all 0.5s;
+  transform: scaleY(0);
+  z-index: 1;
+}
+
+.curtain-down {
+  transform: scaleY(1);
+}
